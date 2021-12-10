@@ -106,5 +106,5 @@ This is a bonus, since the completion data has lat and long, use a mapping libra
 # Submitting your work
 Once you have completed as many steps as you can, please submit your work to a public github or bitbucket account and share the link with Tachyus for review. 
 
-Have fund and don't get stressed. 
+Have fun and don't get stressed. 
 *Tachyus Engineering Team*
