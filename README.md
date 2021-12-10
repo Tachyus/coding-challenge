@@ -108,3 +108,6 @@ Once you have completed as many steps as you can, please submit your work to a p
 
 Have fun and don't get stressed. 
 *Tachyus Engineering Team*
+
+## Note
+You don't have to complete all of the steps in the time you where given.
