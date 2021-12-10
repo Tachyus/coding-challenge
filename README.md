@@ -1,9 +1,9 @@
 # Tachyus UX/UI Coding Challenge
 The Tachyus UX/U Coding challenge, provides Tachyus with the ability to test your knowledge, skills and ability to take instruction when developing software. For this challenge you will need to demonstrate the following 
 
-1. An ability to develop a single page application using react, typescript, and css.
+1. An ability to develop a single page application using [React](https://reactjs.org/).
 2. Visualize the information provided by the Completion and Production csv files.  
-3. Provide the ability to search and sort the information associated with files
+3. Provide the ability to search information associated with files
 4. Provide functionality to update a record in the production file and demonstrate the change in the visualization
 
 
@@ -25,8 +25,8 @@ The files you will need to use are the completions and production files listed b
 This file include completion information for demo field we would like to evaluate. 
 
 #### Columns
-|wellName|wellAPI|boreID|compSubId|X|Y|TD|IsHorizontal|reservoir|faultBlock|compartment|maxBHP|long|lat|
-|--------|-------|------|---------|-|-|--|------------|---------|----------|-----------|------|----|---|
+|wellName|wellAPI|boreID|compSubId|Type|X|Y|TD|IsHorizontal|reservoir|faultBlock|compartment|maxBHP|long|lat|
+|--------|-------|------|---------|----|-|-|--|------------|---------|----------|-----------|------|----|---|
 
 #### Source
 [https://github.com/Tachyus/coding-challenge/files/7695818/completions.csv](https://github.com/Tachyus/coding-challenge/files/7695818/completions.csv)
@@ -43,7 +43,7 @@ This file includes production information for demo field we would like to evalua
 #### Source
 [https://github.com/Tachyus/coding-challenge/files/7695821/production.csv](https://github.com/Tachyus/coding-challenge/files/7695821/production.csv)
 
-### Data Schema
+### Relationships
 These files are related to each other by the following column definitions
 
 |Completions Column|   |Production Column   |
@@ -55,8 +55,54 @@ These files are related to each other by the following column definitions
 # The Challenge
 Please review the following steps and let us know if you have question of need clarity.
 
-You will need first initialize your project, get ready to build and make sure it can be ran locally using localhost. 
+You will need first initialize your project, get it ready to build and make sure it can be ran on localhost. 
 
-## First Challenge
+## Step one - Display data from file
+For this step you will load and display the information from the provided files.
+
 1. Load the [completions(https://github.com/Tachyus/coding-challenge/files/7695818/completions.csv) and the [production](https://github.com/Tachyus/coding-challenge/files/7695821/production.csv)files
-2. Using the file 
+
+2. Using the files you will display the information in a grid, the grid should contain the columns from the completion and production file. There should be no duplicate data columns. For example we should only see wellAPI once in the grid.
+
+3. **(Bonus)** In addition to these columns, you coudl add a Gross column which is oil + water
+
+## Step Two - Visualize data from file
+For this step you are going to add a visualization for the data, this visualization should be displayed along with the grid. 
+
+1. Using a graphing library add a timeseries line graph showing oil, water, gas, and waterInj rate over time.
+
+2. **(Bonus)** Add a toggle button to toggle the graph between rate and cummulative
+
+## Step Three - Searching the data in the files
+For this step you will provide the user with an ability to search the data for a specific wellName, the search should give the user the option to use partial names. Example, if the user types _PLMS_ in the search input, the page will filter to only show wells that start with _PLMS_.
+
+1. Add a search input box to the page. 
+
+2. The search functionality maybe triggered by the user's type or by the user hitting a search button. It needs to do one but does not need to do both. 
+
+3. The grid and visualization must filter to only show data associated with the results from teh search input.
+
+## Step Four - Updating a wells name
+For this step you will give the user the ability to edit the name of one of the wells in the grid. 
+
+1. Provide the user with the ability to select a well from the grid.
+
+2. Once the user has selected a well give them the option to change the name and save
+
+3. The name change should be reflected in the grid and in the visualization. 
+
+## Bonus - Add a map
+This is a bonus, since the completion data has lat and long use a mapping library like google maps or mapbox to show the location of the wells. To created for the bonus you can complete one or all of the steps. 
+
+1. Display the well location markers on a map for corresponding rows in the completions file. 
+
+2. The based on the type of well show a different marker icon or color. For example producers can be green and injectors could be red. 
+
+3. Add a tool tip, to the marker displaying information about the well like wellName, Type, TD,....
+
+
+# Submitting your work
+Once you have completed as many steps as you can, please submit your work to a public github or bitbucket account and share the link with Tachyus for review. 
+
+Have fund and don't get stressed. 
+*Tachyus Engineering Team*
