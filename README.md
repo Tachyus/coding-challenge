@@ -12,7 +12,7 @@ The Tachyus UX/U Coding challenge, provides Tachyus with the ability to test you
 These are just helpful suggestions, you _do not have to use them_
 
 1. For parsing the csv file you might want to use https://www.papaparse.com/
-2. For controls, tables, and other UI elements you could use https://blueprintjs.com/
+2. For controls, tables, and other UI elements you could use https://blueprintjs.com/ or https://mui.com/
 3. For visualization you could use [recharts](https://github.com/recharts/recharts), [victory](https://github.com/FormidableLabs/victory), [nivo](https://github.com/plouc/nivo), [react google charts](https://react-google-charts.com/), or [d3](https://d3js.org/)
 4. Use create react app and yarn
 
