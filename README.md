@@ -62,7 +62,7 @@ For this step you will load and display the information from the provided files.
 
 1. Load the [completions](https://github.com/Tachyus/coding-challenge/files/7695818/completions.csv) and the [production](https://github.com/Tachyus/coding-challenge/files/7695821/production.csv) files.
 
-2. Using the files you will display the information in a grid from the production file.
+2. Using the files you will display the information in two grids one from the production file and one from the completion.
 
 3. **(Bonus)** In addition to these columns, you could add a Gross column which is oil + water.
 
@@ -72,7 +72,7 @@ For this step you are going to add a visualization for the data, this visualizat
 1. Using a graphing library, add a timeseries line graph showing oil, water, gas, and waterInj rate over time.
 
 ## Step Three - Searching the data in the files
-For this step you will provide the user with an ability to search the data for a specific wellName, the search should give the user the option to use partial names. 
+For this step you will provide the user with an ability to search the the compeltion data grid for a specific wellName, the search should give the user the option to use partial names. 
 
 *Example:* If the user types _PLMS_ in the search input, the page will filter to only show wells that start with _PLMS_.
 
@@ -80,7 +80,7 @@ For this step you will provide the user with an ability to search the data for a
 
 2. The search functionality may be triggered by the user's typing or by the user hitting a search button. It needs to do one but does not need to do both. 
 
-3. The grid and visualization must filter to only show the data associated with the results from the search input.
+3. The grid and visualization should filter to only show the data associated with the results from the search input.
 
 ## Step Four - Updating a wells name
 For this step you will give the user the ability to edit the name of one of the wells in the grid. 
