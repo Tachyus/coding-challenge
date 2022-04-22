@@ -62,7 +62,7 @@ For this step you will load and display the information from the provided files.
 
 1. Load the [completions](https://github.com/Tachyus/coding-challenge/files/7695818/completions.csv) and the [production](https://github.com/Tachyus/coding-challenge/files/7695821/production.csv) files.
 
-2. Using the files you will display the information in a grid, the grid should contain the columns from the completion and production file. There should be no duplicate data columns. For example we should only see wellAPI once in the grid.
+2. Using the files you will display the information in a grid from the production file.
 
 3. **(Bonus)** In addition to these columns, you could add a Gross column which is oil + water.
 
@@ -70,8 +70,6 @@ For this step you will load and display the information from the provided files.
 For this step you are going to add a visualization for the data, this visualization should be displayed along with the grid. 
 
 1. Using a graphing library, add a timeseries line graph showing oil, water, gas, and waterInj rate over time.
-
-2. **(Bonus)** Add a toggle button to toggle the graph between rate and cummulative.
 
 ## Step Three - Searching the data in the files
 For this step you will provide the user with an ability to search the data for a specific wellName, the search should give the user the option to use partial names. 
