@@ -109,4 +109,3 @@ Have fun, and don't get stressed.
 
 ## Note
 You don't have to complete all the steps in the given time.
-![image](https://user-images.githubusercontent.com/26232844/195429204-433d64f6-732a-4e94-90b3-a669f4372f5c.png)
